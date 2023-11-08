@@ -1,6 +1,6 @@
 return {
     "simrat39/rust-tools.nvim",
-    config = function ()
+    config = function()
         local rt = require("rust-tools")
         local util = require("lspconfig/util")
         local mason_registry = require("mason-registry")
@@ -10,10 +10,10 @@ return {
         local liblldb_path = extension_path .. "lldb/lib/liblldb.dylib"
         rt.setup({
             dap = {
-              adapter = require("rust-tools.dap").get_codelldb_adapter(codelldb_path, liblldb_path),
+                adapter = require("rust-tools.dap").get_codelldb_adapter(codelldb_path, liblldb_path),
             },
             server = {
-                filetypes = {"rust"},
+                filetypes = { "rust" },
                 root_dir = util.root_pattern("Cargo.toml"),
                 settings = {
                     ['rust-analyzer'] = {
@@ -27,11 +27,11 @@ return {
                         },
                     },
                 },
-                on_attach = function (_, bufnr)
+                on_attach = function(_, bufnr)
                     -- Hover actions
                     vim.keymap.set("n", "<Leader>h", rt.hover_actions.hover_actions, { buffer = bufnr })
                     -- Code action groups
-                    vim.keymap.set("n", "<Leader>a", rt.code_action_group.code_action_group, { buffer = bufnr })
+                    vim.keymap.set("n", "<Leader>ca", rt.code_action_group.code_action_group, { buffer = bufnr })
                 end,
             },
             tools = {
@@ -39,6 +39,6 @@ return {
                     auto_focus = true,
                 },
             },
-       })
+        })
     end,
 }
