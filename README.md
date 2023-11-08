@@ -37,13 +37,13 @@ ln -s ~/ENV_WD/.tmux.conf ~/.tmux.conf
 ```
 6. Install the tmux plugins by creating a session, opening it and using `<Ctrl+a> + I`. Maybe closing the terminal is needed in order for everything to work.
 
-## Tmux
+## Tmux📟
 
 The plugin manager used is [tpm](https://github.com/tmux-plugins/tpm).
 
 Feel free to explore the `.tmux.conf` file to find all the availible commands.
 
-## Neovim
+## Neovim⌨️
 
 The plugin manager used is [Lazy](https://github.com/folke/lazy.nvim).
 
