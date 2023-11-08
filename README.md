@@ -54,14 +54,14 @@ Each plugin is installed on it's own file. However, some of the most outstanding
 #### Harpoon
 [Harpoon](https://github.com/ThePrimeagen/harpoon) is a plugin that allows you to naviagte between a small set of files in a very fast way.
 
-### Telescope
+#### Telescope
 [Telescope](https://github.com/nvim-telescope/telescope.nvim) allows to fuzzy find over lists, in other words: it allows you to search anything you can think about. It's absolutely fantastic (and also highly configurable).
 Make sure to have installed [ripgrep](https://github.com/BurntSushi/ripgrep) and to check the gorgeus [telescope documentation](https://github.com/nvim-telescope/telescope.nvim#getting-started)
 
-### UndooTree
+#### UndooTree
 [UndooTree](https://github.com/mbbill/undotree) speaks by itself. It allows you to visualize the undo history and work with it. Just use `<leader>ut` and make your life better. Essential plugin.
 
-### Format on save
+#### Format on save
 [Format on save](https://github.com/elentok/format-on-save.nvim) it's quite self-descriptive. Also essential.
 
 ### Keymaps
