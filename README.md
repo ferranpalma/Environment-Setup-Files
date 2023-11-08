@@ -26,8 +26,8 @@ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 ```
 git clone https://github.com/ferranpalma/Environment-Setup-Files.git ~/ENV_WD
 ```
-Note that ENV_WD is the working directory where you want all your environment setup files to live.
 
+Note that ENV_WD is the working directory where you want all your environment setup files to live.
 
 4. Create a [soft link](https://man7.org/linux/man-pages/man1/ln.1.html) for Neovim to find your configuration files.
 ```
