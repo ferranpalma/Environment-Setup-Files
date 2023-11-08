@@ -13,7 +13,7 @@ This setup works under some configuration. Without this configuration there migh
 * XCode Command Lines Tool (macOS).
 * Git
 
-## Instalation
+## Installation
 
 In order to have this set up installed and running in your computer, this are the required steps
 
@@ -43,7 +43,7 @@ ln -s ~/ENV_WD/.tmux.conf ~/.tmux.conf
 
 The plugin manager used is [tpm](https://github.com/tmux-plugins/tpm).
 
-Feel free to explore the `.tmux.conf` file to find all the availible commands.
+Feel free to explore the `.tmux.conf` file to find all the available commands.
 
 ## Neovim ⌨️
 
@@ -51,7 +51,7 @@ The plugin manager used is [Lazy](https://github.com/folke/lazy.nvim).
 
 The setup also uses [Mason](https://github.com/williamboman/mason.nvim) in combination with [NvimLspConfig](https://github.com/neovim/nvim-lspconfig) to manage and configure LSP servers.
 
-Each plugin is installed on it's own file. However, some of the most outstanding are:
+Each plugin is installed on its own file. However, some of the most outstanding are:
 
 #### Harpoon
 [Harpoon](https://github.com/ThePrimeagen/harpoon) is a plugin that allows you to naviagte between a small set of files in a very fast way.
