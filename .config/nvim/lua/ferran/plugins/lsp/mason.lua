@@ -29,12 +29,10 @@ return {
             ensure_installed = {
                 "gopls",
                 "lua_ls",
+                "tsserver",
             },
             -- auto-install configured servers (with lspconfig)
             automatic_installation = true, -- not the same as ensure_installed
         })
-
-        lspconfig.gopls.setup({})
-        lspconfig.lua_ls.setup({})
     end,
 }
