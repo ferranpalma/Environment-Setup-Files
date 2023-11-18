@@ -9,6 +9,7 @@ return {
                 lua = formatters.lsp,
                 typescript = formatters.lsp,
                 javascript = formatters.lsp,
+                html = formatters.lsp,
             }
         })
     end
