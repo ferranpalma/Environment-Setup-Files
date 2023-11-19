@@ -1,5 +1,9 @@
 return {
     "simrat39/rust-tools.nvim",
+    dependencies = {
+        "rust-lang/rust.vim",
+    },
+    ft = { "rust", },
     config = function()
         local rt = require("rust-tools")
         local util = require("lspconfig/util")
