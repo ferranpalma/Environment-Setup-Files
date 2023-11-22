@@ -7,8 +7,7 @@ return {
             formatter_by_ft = {
                 go = formatters.lsp,
                 lua = formatters.lsp,
-                typescript = formatters.lsp,
-                javascript = formatters.lsp,
+                bash = formatters.lsp,
                 html = formatters.lsp,
             }
         })

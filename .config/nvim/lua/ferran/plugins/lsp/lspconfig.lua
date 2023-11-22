@@ -84,18 +84,15 @@ return {
                 }
             }
         })
-        lspconfig["bashls"].setup({
-            pattern = { "*.sh" },
+        lspconfig["volar"].setup({
+            capabilities = capabilities,
+            on_attach = on_attach,
         })
-        lspconfig["tsserver"].setup({
+        lspconfig["bashls"].setup({
             capabilities = capabilities,
             on_attach = on_attach,
         })
         lspconfig["html"].setup({
-            capabilities = capabilities,
-            on_attach = on_attach,
-        })
-        lspconfig["cssls"].setup({
             capabilities = capabilities,
             on_attach = on_attach,
         })

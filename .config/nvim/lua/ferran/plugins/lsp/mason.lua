@@ -10,9 +10,6 @@ return {
         -- import mason-lspconfig
         local mason_lspconfig = require("mason-lspconfig")
 
-        -- import lspconfig
-        local lspconfig = require("lspconfig")
-
         -- enable mason and configure icons
         mason.setup({
             ui = {
@@ -29,10 +26,9 @@ return {
             ensure_installed = {
                 "gopls",
                 "lua_ls",
-                "tsserver",
+                "volar",
                 "bashls",
                 "html",
-                "cssls",
             },
             -- auto-install configured servers (with lspconfig)
             automatic_installation = true, -- not the same as ensure_installed
