@@ -8,10 +8,11 @@ This setup works under some configuration. Without this configuration there migh
 * True color terminal (iTerm2 in my particular case).
 * Neovim >= 0.9 (this might change in the future)
 * Tmux
-* [NerdFont](https://www.nerdfonts.com/).
+* [NerdFonts](https://www.nerdfonts.com/).
 * [Ripgrep](https://github.com/BurntSushi/ripgrep) for Telescope Fuzzy Finder to work.
 * XCode Command Lines Tool (macOS).
 * Git
+* Node (required by some LSP's to work)
 
 ## Installation
 
