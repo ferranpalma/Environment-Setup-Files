@@ -11,6 +11,8 @@ return {
                 html = formatters.lsp,
                 typescript = formatters.lsp,
                 javascript = formatters.lsp,
+                vue = formatters.lsp,
+                css = formatters.lsp,
             }
         })
     end

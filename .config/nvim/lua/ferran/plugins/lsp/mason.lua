@@ -26,10 +26,11 @@ return {
             ensure_installed = {
                 "gopls",
                 "lua_ls",
-                "volar",
                 "bashls",
                 "html",
                 "tsserver",
+                "volar",
+                "cssls",
             },
             -- auto-install configured servers (with lspconfig)
             automatic_installation = true, -- not the same as ensure_installed

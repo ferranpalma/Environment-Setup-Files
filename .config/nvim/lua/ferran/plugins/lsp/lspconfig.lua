@@ -84,10 +84,6 @@ return {
                 }
             }
         })
-        lspconfig["volar"].setup({
-            capabilities = capabilities,
-            on_attach = on_attach,
-        })
         lspconfig["bashls"].setup({
             capabilities = capabilities,
             on_attach = on_attach,
@@ -97,6 +93,14 @@ return {
             on_attach = on_attach,
         })
         lspconfig["tsserver"].setup({
+            capabilities = capabilities,
+            on_attach = on_attach,
+        })
+        lspconfig["volar"].setup({
+            capabilities = capabilities,
+            on_attach = on_attach,
+        })
+        lspconfig["cssls"].setup({
             capabilities = capabilities,
             on_attach = on_attach,
         })
