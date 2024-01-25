@@ -77,9 +77,21 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
+
+plugins=(git zsh-autosuggestions zsh-syntax-highlighting zsh-vi-mode)
+
+
+# Configure zsh-vi-mode plugin
+function zvm_config() {
+    ZVM_LINE_INIT_MODE=$ZVM_MODE_INSERT
+    ZVM_VI_ESCAPE_BINDKEY=jk
+    ZVM_VI_INSERT_ESCAPE_BINDKEY=jk
+    ZVM_VI_VISUAL_ESCAPE_BINDKEY=jk
+    ZVM_VI_OPPEND_ESCAPE_BINDKEY=jk
+}
 
 source $ZSH/oh-my-zsh.sh
+source $ZSH_CUSTOM/plugins/zsh-vi-mode/zsh-vi-mode.zsh
 
 # User configuration
 

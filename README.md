@@ -22,31 +22,32 @@ This setup works under some configuration. Without this configuration there migh
 In order to have this set up installed and running in your computer, this are the required steps
 
 1. Install [Oh My Zsh](https://ohmyz.sh/)
-2. Make sure to have a .config folder in your root directory.
-3. Run this command to install the [Tmux plugin manager](https://github.com/tmux-plugins/tpm).
+2. Install [Zsh Vi Mode](https://github.com/jeffreytse/zsh-vi-mode?tab=readme-ov-file#%EF%B8%8F-installation) to use vim motions within the terminal. 
+3. Make sure to have a .config folder in your root directory.
+4. Run this command to install the [Tmux plugin manager](https://github.com/tmux-plugins/tpm).
 ```
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 ```
-4. Run this command to clone this repository.
+5. Run this command to clone this repository.
 ```
 git clone https://github.com/ferranpalma/Environment-Setup-Files.git ~/ENV_WD
 ```
 
 > Note that ENV_WD is the working directory where you want all your environment setup files to live.
 
-5. Create a [soft link](https://man7.org/linux/man-pages/man1/ln.1.html) for zsh to find your configuration file.
+6. Create a [soft link](https://man7.org/linux/man-pages/man1/ln.1.html) for zsh to find your configuration file.
 ```
 ln -s ~/ENV_WD/.zshrc ~/.zshrc
 ```
-6. Create a [soft link](https://man7.org/linux/man-pages/man1/ln.1.html) for Neovim to find your configuration files.
+7. Create a [soft link](https://man7.org/linux/man-pages/man1/ln.1.html) for Neovim to find your configuration files.
 ```
 ln -s ~/ENV_WD/.config/nvim/ ~/.config/
 ```
-7. Create a [soft link](https://man7.org/linux/man-pages/man1/ln.1.html) for tmux to find your configuration file.
+8. Create a [soft link](https://man7.org/linux/man-pages/man1/ln.1.html) for tmux to find your configuration file.
 ```
 ln -s ~/ENV_WD/.tmux.conf ~/.tmux.conf
 ```
-8. Install the tmux plugins by creating a session, opening it and using `<Ctrl+a> + I`. Maybe closing the terminal is needed in order for everything to work.
+9. Install the tmux plugins by creating a session, opening it and using `<Ctrl+a> + I`. Maybe closing the terminal is needed in order for everything to work.
 
 ## Tmux 📟
 
