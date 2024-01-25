@@ -1,8 +1,8 @@
-# Environment Setup Files💻
+# 💻 Environment Setup Files
 
 This repository contains all the files that I need in order to set up my working environment with [Neovim](https://neovim.io/) and [Tmux](https://github.com/tmux/tmux)
 
-## Requirements
+## 📝 Requirements
 This setup works under some configuration. Without this configuration there might be things that don't work as expected.
 
 * True color terminal (iTerm2 in my particular case).
@@ -17,7 +17,7 @@ This setup works under some configuration. Without this configuration there migh
 * XCode Command Lines Tool (macOS).
 * Node (required by some LSP's to work)
 
-## Installation
+## ⚒️  Installation
 
 In order to have this set up installed and running in your computer, this are the required steps
 
@@ -48,13 +48,13 @@ ln -s ~/ENV_WD/.tmux.conf ~/.tmux.conf
 ```
 8. Install the tmux plugins by creating a session, opening it and using `<Ctrl+a> + I`. Maybe closing the terminal is needed in order for everything to work.
 
-## Tmux 📟
+## 📟 Tmux 
 
 The plugin manager used is [tpm](https://github.com/tmux-plugins/tpm).
 
 Feel free to explore the `.tmux.conf` file to find all the available commands.
 
-## Neovim ⌨️
+## ⌨️  Neovim 
 
 The plugin manager used is [Lazy](https://github.com/folke/lazy.nvim).
 
@@ -75,7 +75,7 @@ Make sure to have installed [ripgrep](https://github.com/BurntSushi/ripgrep) and
 #### Format on save
 [Format on save](https://github.com/elentok/format-on-save.nvim) it's quite self-descriptive. Also essential.
 
-### Keymaps
+### 🚀 Keymaps
 
 The below tables contain some useful keymaps. However, there are a lot of them that are not in this table and that are incredibly useful.
 
