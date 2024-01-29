@@ -13,6 +13,7 @@ return {
                 javascript = formatters.lsp,
                 vue = formatters.lsp,
                 css = formatters.lsp,
+                yaml = formatters.lsp,
             }
         })
     end
