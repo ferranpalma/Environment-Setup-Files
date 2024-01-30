@@ -10,9 +10,6 @@ return {
         local codelldb_path = extension_path .. "adapter/codelldb"
         local liblldb_path = extension_path .. "lldb/lib/liblldb.dylib"
         vim.g.rustaceanvim = {
-            dap = {
-                adapter = require("rust-tools.dap").get_codelldb_adapter(codelldb_path, liblldb_path),
-            },
             server = {
                 on_attach = function(_, bufnr)
                     local opts = { noremap = true, silent = true }
@@ -70,7 +67,7 @@ return {
                         },
                     },
                 }
-            }
+            },
         }
     end,
 }
