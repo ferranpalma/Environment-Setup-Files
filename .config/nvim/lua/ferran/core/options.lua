@@ -33,6 +33,7 @@ opt.undofile = true
 opt.hlsearch = false
 opt.incsearch = true
 
+opt.scrolloff = 8
 
 -- split windows
 opt.splitright = true -- split vertical window to the right
