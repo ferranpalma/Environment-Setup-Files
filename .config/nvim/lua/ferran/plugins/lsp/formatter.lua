@@ -14,6 +14,7 @@ return {
                 vue = formatters.lsp,
                 css = formatters.lsp,
                 yaml = formatters.lsp,
+                python = formatters.lsp,
             }
         })
     end

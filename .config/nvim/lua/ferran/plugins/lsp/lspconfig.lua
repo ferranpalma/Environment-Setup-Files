@@ -108,5 +108,9 @@ return {
             capabilities = capabilities,
             on_attach = on_attach,
         })
+        lspconfig["ruff_lsp"].setup({
+            capabilities = capabilities,
+            on_attach = on_attach,
+        })
     end,
 }
