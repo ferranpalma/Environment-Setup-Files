@@ -96,19 +96,15 @@ return {
             capabilities = capabilities,
             on_attach = on_attach,
         })
-        lspconfig["volar"].setup({
-            capabilities = capabilities,
-            on_attach = on_attach,
-        })
         lspconfig["cssls"].setup({
             capabilities = capabilities,
             on_attach = on_attach,
         })
-        lspconfig["yamlls"].setup({
+        lspconfig["ruff_lsp"].setup({
             capabilities = capabilities,
             on_attach = on_attach,
         })
-        lspconfig["ruff_lsp"].setup({
+        lspconfig["taplo"].setup({
             capabilities = capabilities,
             on_attach = on_attach,
         })

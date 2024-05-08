@@ -9,13 +9,14 @@ return {
                 lua = formatters.lsp,
                 bash = formatters.lsp,
                 html = formatters.lsp,
-                typescript = formatters.lsp,
-                javascript = formatters.lsp,
                 vue = formatters.lsp,
+                javascript = formatters.prettierd,
+                typescript = formatters.prettierd,
+                typescriptreact = formatters.prettierd,
                 css = formatters.lsp,
                 yaml = formatters.lsp,
                 python = formatters.lsp,
-            }
+            },
         })
     end
 }

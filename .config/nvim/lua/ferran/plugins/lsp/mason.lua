@@ -29,10 +29,9 @@ return {
                 "bashls",
                 "html",
                 "tsserver",
-                "volar",
                 "cssls",
-                "yamlls",
-                "ruff_lsp"
+                "ruff_lsp",
+                "taplo"
             },
             -- auto-install configured servers (with lspconfig)
             automatic_installation = true, -- not the same as ensure_installed

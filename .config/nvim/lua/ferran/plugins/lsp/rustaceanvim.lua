@@ -7,13 +7,15 @@ return {
         local mason_registry = require("mason-registry")
         local codelldb = mason_registry.get_package("codelldb")
         local extension_path = codelldb:get_install_path() .. "/extension/"
+        local cmp_nvim_lsp = require("cmp_nvim_lsp")
         local codelldb_path = extension_path .. "adapter/codelldb"
         local liblldb_path = extension_path .. "lldb/lib/liblldb.dylib"
+        local cfg = require('rustaceanvim.config')
         vim.g.rustaceanvim = {
             server = {
+                capabilities = cmp_nvim_lsp.default_capabilities(),
                 on_attach = function(_, bufnr)
                     local opts = { noremap = true, silent = true }
-                    opts.buffer = bufnr
 
                     -- set keybinds
                     opts.desc = "Show LSP references"
@@ -55,18 +57,9 @@ return {
                     opts.desc = "Restart LSP"
                     keymap.set("n", "<leader>rs", ":LspRestart<CR>", opts) -- mapping to restart lsp if necessary
                 end,
-                settings = {
-                    ['rust-analyzer'] = {
-                        cargo = { allFeatures = true },
-                        checkOnSave = {
-                            allFeatures = true,
-                            command = 'clippy',
-                        },
-                        procMacro = {
-                            enable = true,
-                        },
-                    },
-                }
+            },
+            dap = {
+                adapter = cfg.get_codelldb_adapter(codelldb_path, liblldb_path)
             },
         }
     end,
