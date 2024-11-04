@@ -16,6 +16,7 @@ This setup works under some configuration. Without this configuration there migh
 * [Ripgrep](https://github.com/BurntSushi/ripgrep) for Telescope Fuzzy Finder to work.
 * XCode Command Lines Tool (macOS).
 * Node (required by some LSP's to work)
+> [asdf](https://asdf-vm.com/) is recommended for dependency management
 
 ## ⚒️  Installation
 

@@ -53,7 +53,7 @@ return {
             keymap.set("n", "]d", vim.diagnostic.goto_next, opts) -- jump to next diagnostic in buffer
 
             opts.desc = "Show documentation for what is under cursor"
-            keymap.set("n", "K", vim.lsp.buf.hover, opts) -- show documentation for what is under cursor
+            keymap.set("n", "<leader>K", vim.lsp.buf.hover, opts) -- show documentation for what is under cursor
 
             opts.desc = "Restart LSP"
             keymap.set("n", "<leader>rs", ":LspRestart<CR>", opts) -- mapping to restart lsp if necessary
@@ -92,9 +92,20 @@ return {
             capabilities = capabilities,
             on_attach = on_attach,
         })
-        lspconfig["tsserver"].setup({
+        lspconfig["ts_ls"].setup({
             capabilities = capabilities,
             on_attach = on_attach,
+            filetypes = { 'typescript', 'javascript', 'javascriptreact', 'typescriptreact', 'vue', 'json' },
+            init_options = {
+                plugins = {
+                    {
+                        name = '@vue/typescript-plugin',
+                        location = require('mason-registry').get_package('vue-language-server'):get_install_path() ..
+                            '/node_modules/@vue/language-server',
+                        languages = { 'vue' },
+                    }
+                }
+            }
         })
         lspconfig["cssls"].setup({
             capabilities = capabilities,
@@ -105,6 +116,10 @@ return {
             on_attach = on_attach,
         })
         lspconfig["taplo"].setup({
+            capabilities = capabilities,
+            on_attach = on_attach,
+        })
+        lspconfig["dockerls"].setup({
             capabilities = capabilities,
             on_attach = on_attach,
         })

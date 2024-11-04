@@ -15,6 +15,7 @@ require("lazy").setup({
     { import = "ferran.plugins" },
     { import = "ferran.plugins.lsp" },
     { import = "ferran.plugins.debuggers" },
+    { import = "ferran.plugins.formatters" },
 }, {
     install = {
         colorscheme = { "nightfly" },

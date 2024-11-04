@@ -28,11 +28,11 @@ return {
                 "lua_ls",
                 "bashls",
                 "html",
-                "tsserver",
+                "ts_ls",
                 "cssls",
                 "ruff_lsp",
                 "taplo",
-                "tailwindcss"
+                "tailwindcss",
             },
             -- auto-install configured servers (with lspconfig)
             automatic_installation = true, -- not the same as ensure_installed

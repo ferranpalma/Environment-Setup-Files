@@ -1,5 +1,6 @@
 return {
     "elentok/format-on-save.nvim",
+    dependencies = { "neovim/nvim-lspconfig" },
     config = function()
         local formatters = require("format-on-save.formatters")
         local fmt_on_save = require("format-on-save")
@@ -9,13 +10,13 @@ return {
                 lua = formatters.lsp,
                 bash = formatters.lsp,
                 html = formatters.lsp,
-                vue = formatters.lsp,
                 javascript = formatters.prettierd,
-                typescript = formatters.prettierd,
-                typescriptreact = formatters.prettierd,
-                css = formatters.lsp,
+                vue = formatters.prettierd,
+                css = formatters.prettierd,
                 yaml = formatters.lsp,
                 python = formatters.lsp,
+                dockercompose = formatters.lsp,
+
             },
         })
     end
