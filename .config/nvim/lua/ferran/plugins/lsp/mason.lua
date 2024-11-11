@@ -30,7 +30,7 @@ return {
                 "html",
                 "ts_ls",
                 "cssls",
-                "ruff_lsp",
+                "ruff",
                 "taplo",
                 "tailwindcss",
             },
