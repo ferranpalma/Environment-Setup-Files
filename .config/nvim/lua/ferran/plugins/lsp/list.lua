@@ -1,0 +1,13 @@
+require("ferran.plugins.lsp.servers.gopls")
+require("ferran.plugins.lsp.servers.lua_ls")
+require("ferran.plugins.lsp.servers.ts_ls")
+require("ferran.plugins.lsp.servers.ruff")
+require("ferran.plugins.lsp.servers.clangd")
+require("ferran.plugins.lsp.servers.pyright")
+
+vim.lsp.enable('gopls')
+vim.lsp.enable('lua_ls')
+vim.lsp.enable('ts_ls')
+vim.lsp.enable('ruff')
+vim.lsp.enable('clangd')
+vim.lsp.enable('pyright')
