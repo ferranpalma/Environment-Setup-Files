@@ -1,8 +1,8 @@
 local keybindings = require("ferran.plugins.lsp.keybindings")
+local capabilities = require("ferran.plugins.lsp.capabilities")
 
 vim.lsp.config['lua_ls'] = {
-    cmd = { 'lua-language-server' },
-    filetypes = { 'lua' },
+    capabilities = capabilities,
     on_attach = keybindings.on_attach,
     settings = {
         Lua = {

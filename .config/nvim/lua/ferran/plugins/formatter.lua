@@ -11,7 +11,7 @@ return {
                 javascript = formatters.prettierd,
                 vue = formatters.prettierd,
                 javascriptreact = formatters.prettierd,
-                python = formatters.lsp,
+                python = formatters.ruff,
             },
         })
     end
