@@ -1,0 +1,18 @@
+# aws
+alias ap='aws-profile'
+
+# cds
+alias envfiles='cd ~ferranpalmacomas/env-files'
+alias factout='cd ~ferranpalmacomas/Dev/factout'
+alias laibel='cd ~ferranpalmacomas/Dev/laibel'
+
+# kubernetes
+alias kubectl='kubecolor'
+alias k='kubectl'
+alias kc='kubectx'
+alias kn='kubens'
+
+# git
+alias gs='git status'
+alias gc='git commit'
+alias gp='git push'

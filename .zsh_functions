@@ -1,0 +1,13 @@
+aws-profile () {
+        if [ $# -eq 0 ]
+        then
+                echo "$AWS_PROFILE"
+                return 0
+        fi
+        if [[ "$1" == "clear" ]]
+        then
+                unset AWS_PROFILE
+        else
+                export AWS_PROFILE="$1"
+        fi
+}
