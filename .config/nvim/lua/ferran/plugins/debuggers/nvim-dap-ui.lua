@@ -2,24 +2,40 @@ return {
     "rcarriga/nvim-dap-ui",
     dependencies = {
         "mfussenegger/nvim-dap",
-        "nvim-neotest/nvim-nio"
+        "nvim-neotest/nvim-nio",
+        "rcarriga/nvim-dap-ui",
+        "theHamsta/nvim-dap-virtual-text",
+        "williamboman/mason.nvim",
+        "leoluz/nvim-dap-go"
     },
-    ft = { "rust", },
     config = function()
+        local dap = require "dap"
+        local dapui = require "dapui"
+
         require("dapui").setup()
-        local dap = require("dap")
-        local dapui = require("dapui")
-        dap.listeners.after.event_initialized["dapui_config"] = function()
+        require("nvim-dap-virtual-text").setup()
+        require("dap-go").setup()
+
+        vim.keymap.set("n", "<Leader>g", dap.toggle_breakpoint)
+        vim.keymap.set("n", "<Leader>bc", dap.continue)
+        vim.keymap.set("n", "<Leader>bsi", dap.step_into)
+        vim.keymap.set("n", "<Leader>bov", dap.step_over)
+        vim.keymap.set("n", "<Leader>bo", dap.step_out)
+        vim.keymap.set("n", "<Leader>bb", dap.step_back)
+        vim.keymap.set("n", "<Leader>br", dap.restart)
+        vim.keymap.set("n", "<Leader>bt", dap.terminate)
+
+        dap.listeners.before.attach.dapui_config = function()
             dapui.open()
         end
-        dap.listeners.before.event_terminated["dapui_config"] = function()
+        dap.listeners.before.launch.dapui_config = function()
+            dapui.open()
+        end
+        dap.listeners.before.event_terminated.dapui_config = function()
             dapui.close()
         end
-        dap.listeners.before.event_exited["dapui_config"] = function()
+        dap.listeners.before.event_exited.dapui_config = function()
             dapui.close()
         end
-        vim.keymap.set("n", "<Leader>dt", ':DapToggleBreakpoint<CR>')
-        vim.keymap.set("n", "<Leader>dx", ':DapTerminate<CR>')
-        vim.keymap.set("n", "<Leader>do", ':DapStepOver<CR>')
-    end
+    end,
 }
