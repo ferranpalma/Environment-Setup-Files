@@ -1,3 +1,5 @@
+ZVM_INIT_MODE=sourcing
+
 plugins=(git zsh-autosuggestions zsh-syntax-highlighting zsh-vi-mode asdf)
 
 function zvm_config() {

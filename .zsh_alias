@@ -11,8 +11,14 @@ alias kubectl='kubecolor'
 alias k='kubectl'
 alias kc='kubectx'
 alias kn='kubens'
+alias kgp='k get pods'
 
 # git
 alias gs='git status'
 alias gc='git commit'
 alias gp='git push'
+alias gl='git pull'
+
+# laibel
+alias laibel-tunnel-dev='kubectl --context main -n laibel-dev port-forward pod/rds-bastion 15432:5432'
+alias laibel-tunnel-prod='kubectl --context main -n laibel port-forward pod/rds-bastion 25432:5432'
